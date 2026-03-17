@@ -3,76 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历</title>
+    <title>周坤 - Java开发工程师</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <!-- 基本信息 -->
         <header class="header">
+            <div class="avatar"></div>
             <h1 class="name">周坤</h1>
-            <p class="title">Java开发工程师</p>
+            <p class="title">高级Java开发工程师</p>
             <div class="contact-brief">
-                <span>杭州 · 6年经验</span>
+                <span class="location">杭州 · 6年经验</span>
+                <span class="email">zhoukun@example.com</span>
             </div>
         </header>
 
-        <!-- 技能 -->
+        <!-- 个人简介 -->
         <section class="section">
-            <h2 class="section-title">技能</h2>
-            <div class="skills-grid">
-                <div class="skill-item">Java / Spring Boot</div>
-                <div class="skill-item">MySQL / Redis</div>
-                <div class="skill-item">Spring Cloud / 微服务</div>
-                <div class="skill-item">Docker / K8s</div>
-                <div class="skill-item">MyBatis / JPA</div>
-                <div class="skill-item">Git / Maven</div>
+            <h2 class="section-title">
+                <span class="icon">👤</span>
+                个人简介
+            </h2>
+            <p class="summary">
+                拥有6年后端开发经验，精通Java技术栈，熟悉微服务架构设计。在大型互联网公司主导过多个核心系统的开发与优化，具备丰富的高并发、分布式系统经验。热衷于技术钻研，持续关注业界最佳实践。
+            </p>
+        </section>
+
+        <!-- 工作经历 -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">💼</span>
+                工作经历
+            </h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-info">
+                            <h3 class="company">某互联网大厂</h3>
+                            <p class="position">高级Java工程师</p>
+                        </div>
+                        <span class="exp-date">2021.06 - 至今</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>负责核心交易系统的架构设计与开发，支撑日均千万级订单</li>
+                        <li>主导微服务拆分重构，将单体应用拆分为15+微服务</li>
+                        <li>优化慢查询50+条，系统响应时间降低40%</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-info">
+                            <h3 class="company">某科技公司</h3>
+                            <p class="position">Java开发工程师</p>
+                        </div>
+                        <span class="exp-date">2018.07 - 2021.05</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>参与电商平台后端开发，负责商品中心与订单模块</li>
+                        <li>设计并实现Redis缓存方案，提升接口性能10倍</li>
+                        <li>负责数据库设计与优化，支撑百万级数据量</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术技能 -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">⚡</span>
+                技术技能
+            </h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4 class="category-title">核心语言</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Java</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="category-title">框架 & 中间件</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Spring Boot</span>
+                        <span class="skill-tag primary">Spring Cloud</span>
+                        <span class="skill-tag">MyBatis</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">RocketMQ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="category-title">数据库 & 存储</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="category-title">DevOps & 工具</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Maven</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- 项目经验 -->
         <section class="section">
-            <h2 class="section-title">项目经验</h2>
+            <h2 class="section-title">
+                <span class="icon">🚀</span>
+                项目经验
+            </h2>
             <div class="projects">
                 <div class="project-item">
                     <div class="project-header">
-                        <h3 class="project-name">企业管理系统</h3>
-                        <span class="project-date">2024.01 - 2025.12</span>
+                        <h3 class="project-name">分布式交易系统</h3>
+                        <span class="project-tech">Spring Cloud · Redis · RocketMQ</span>
                     </div>
-                    <p class="project-desc">负责前端架构设计与核心功能开发，使用 React + TypeScript 构建，优化性能提升 40%</p>
+                    <p class="project-desc">
+                        设计并开发高并发交易系统，采用分布式事务方案保障数据一致性。系统支撑日均千万级订单，QPS峰值达5万+。引入消息队列实现异步处理，订单处理耗时从200ms降低至50ms。
+                    </p>
                 </div>
                 <div class="project-item">
                     <div class="project-header">
-                        <h3 class="project-name">电商平台</h3>
-                        <span class="project-date">2023.03 - 2023.12</span>
+                        <h3 class="project-name">微服务网关平台</h3>
+                        <span class="project-tech">Spring Cloud Gateway · Nacos · Sentinel</span>
                     </div>
-                    <p class="project-desc">开发商品展示、购物车、订单管理等模块，实现响应式设计，支持移动端访问</p>
+                    <p class="project-desc">
+                        构建统一网关平台，整合50+微服务接口。实现动态路由、熔断降级、限流防刷等核心功能。基于Sentinel实现精细化限流策略，有效抵御恶意攻击，保障系统稳定性。
+                    </p>
                 </div>
                 <div class="project-item">
                     <div class="project-header">
-                        <h3 class="project-name">数据可视化平台</h3>
-                        <span class="project-date">2022.06 - 2023.02</span>
+                        <h3 class="project-name">实时数据分析平台</h3>
+                        <span class="project-tech">Flink · Kafka · Elasticsearch</span>
                     </div>
-                    <p class="project-desc">使用 D3.js 和 ECharts 实现多种图表组件，支持实时数据更新和交互操作</p>
+                    <p class="project-desc">
+                        基于Flink+Kafka构建实时数据处理管道，实现业务数据的实时采集、清洗、计算与存储。支持多维度数据查询与分析，数据延迟控制在秒级，为业务决策提供实时数据支撑。
+                    </p>
                 </div>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">🎓</span>
+                教育背景
+            </h2>
+            <div class="education-item">
+                <div class="edu-header">
+                    <h3 class="school">某重点大学</h3>
+                    <span class="edu-time">2014.09 - 2018.06</span>
+                </div>
+                <p class="edu-info">计算机科学与技术 · 本科</p>
             </div>
         </section>
 
         <!-- 联系方式 -->
         <section class="section">
-            <h2 class="section-title">联系方式</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-label">邮箱</span>
-                    <span class="contact-value">example@email.com</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-label">电话</span>
-                    <span class="contact-value">138-0000-0000</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-value">github.com/username</span>
+            <h2 class="section-title">
+                <span class="icon">📬</span>
+                联系方式
+            </h2>
+            <div class="contact-grid">
+                <a href="mailto:zhoukun@example.com" class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <div class="contact-text">
+                        <span class="contact-label">邮箱</span>
+                        <span class="contact-value">zhoukun@example.com</span>
+                    </div>
+                </a>
+                <a href="tel:13800000000" class="contact-card">
+                    <span class="contact-icon">📱</span>
+                    <div class="contact-text">
+                        <span class="contact-label">电话</span>
+                        <span class="contact-value">138-0000-0000</span>
+                    </div>
+                </a>
+                <a href="https://github.com/zhoukun" target="_blank" class="contact-card">
+                    <span class="contact-icon">💻</span>
+                    <div class="contact-text">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/zhoukun</span>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-text">
+                        <span class="contact-label">坐标</span>
+                        <span class="contact-value">杭州</span>
+                    </div>
                 </div>
             </div>
         </section>
